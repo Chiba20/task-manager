@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
-
+ 
 weather_data = {
     "London": {
         "temperature": "15°C",
