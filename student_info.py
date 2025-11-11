@@ -7,7 +7,7 @@ students = {
     "34567": {"name": "Melanin Ahmed",   "course": "Mathematics", "year": 1, "gpa": 3.8},
     "45678": {"name": "Ali Hassan", "course": "Engineering", "year": 4, "gpa": 3.1}
 }
-
+ 
 
 
 @app.route("/api/student", methods=["GET"])
