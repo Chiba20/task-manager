@@ -1,0 +1,154 @@
+/* styles.css - modern profile styles */
+
+/* Page container and background */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f5f7fb;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+    margin: 8px 0 0 0;
+}
+h2 {
+    color: #34495e;
+    margin-top: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3498db;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.12);
+}
+
+/* Card Layout */
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-top: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Header card special layout */
+.header-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Lists */
+ul {
+    padding-left: 18px;
+}
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th {
+    background-color: #3498db;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+td {
+    padding: 12px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+tbody tr:hover td {
+    background-color: #f0f8ff;
+    transition: 0.2s;
+}
+
+/* Form styling */
+form {
+    display: grid;
+    gap: 12px;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6dfea;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.btn-primary {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Small utility: visually-hidden label text (for accessibility) */
+.sr-only {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+/* Responsive: stack header on small screens */
+@media (max-width: 640px) {
+    .header-card { flex-direction: column; align-items: center; text-align: center; }
+    .profile-photo { width: 120px; height: 120px; }
+    nav ul { flex-direction: column; gap: 8px; align-items: center; }
+}
